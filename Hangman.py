@@ -1,4 +1,5 @@
 import random
+import Hangman_words
 
 print('''
  _                                             
@@ -66,8 +67,8 @@ stages = ['''
       |
 =========
 ''']
-word_list = ["Varun","TheWholeMan","Ragnarok","thor","loki"]
-Chosen_word = random.choice(word_list).lower()
+
+Chosen_word = random.choice(Hangman_words.words_list).lower()
 print(Chosen_word)
 blanks = []
 for n in range(len(Chosen_word)):
